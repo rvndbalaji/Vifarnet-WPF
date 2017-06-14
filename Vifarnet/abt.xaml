@@ -1,0 +1,38 @@
+﻿<Window x:Class="abt"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="About Vifarnet" Height="359" Width="612" xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen" Name="abt" OpacityMask="{x:Null}" ResizeMode="NoResize" Topmost="True">
+    <Grid Background="{x:Null}">
+        <Image Height="166" HorizontalAlignment="Left" Margin="212,76,0,0" Name="logo1" OpacityMask="Black" Source="/Vifarnet;component/Images/Xemplar1.png" Stretch="Uniform" VerticalAlignment="Top" Width="177" />
+        <Label Content="Version 3.4" FontFamily="Cambria" FontSize="25" FontWeight="Normal" Height="37" HorizontalAlignment="Left" Margin="233,258,0,0" Name="Label1" VerticalAlignment="Top" Width="128">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" />
+                    <GradientStop Color="#FF6A0000" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Background="{x:Null}" Content="©2013 Vifarnet Corporation" FontFamily="Cambria" FontSize="19" FontStyle="Italic" FontWeight="Normal" Foreground="Black" HorizontalAlignment="Left" Margin="355,292,0,-9" Name="Label4" Width="248" />
+        <Label Background="{x:Null}" Content="Programmed &amp; designed by" FontFamily="Cambria" FontSize="17.5" FontStyle="Italic" FontWeight="Normal" Foreground="Black" Height="44" HorizontalAlignment="Left" Margin="0,269,0,0" Name="Label2" VerticalAlignment="Top" Width="241" />
+        <Label Background="{x:Null}" Content="Aravind Balaji" FontFamily="Cambria" FontSize="19" FontStyle="Italic" FontWeight="Bold" Height="44" HorizontalAlignment="Left" Margin="0,288,0,0" Name="Label3" VerticalAlignment="Top" Width="141" Foreground="#FF004EFF"></Label>
+        <Label Content="Vifarnet" FontFamily="Cambria" FontSize="40" FontWeight="Normal" Height="48" HorizontalAlignment="Left" Margin="151,0,0,0" Name="vifarnet" VerticalAlignment="Top" Width="151">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Red" Offset="0" />
+                    <GradientStop Color="#FF6A0000" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label Content="Xemplar" FontFamily="Gabriola" FontSize="50" FontWeight="Normal" HorizontalAlignment="Left" Margin="298,-14,0,250" Name="Label11" Width="164">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0094FF" Offset="0.377" />
+                    <GradientStop Color="Blue" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+    </Grid>
+    <Window.Background>
+        <ImageBrush ImageSource="/Vifarnet;component/Images/bg35.jpg" />
+    </Window.Background>
+</Window>

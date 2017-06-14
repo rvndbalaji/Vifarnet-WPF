@@ -1,0 +1,147 @@
+﻿<Window x:Class="Fixit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Vifarnet Fix It" Height="742" Width="1371" Icon="/Vifarnet;component/Images/fixit.png" WindowStartupLocation="CenterScreen" WindowState="Maximized" MinWidth="1371" MinHeight="742" HorizontalAlignment="Right" xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" AllowDrop="True" ResizeMode="CanResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/Vifarnet;component/Images/bg37.jpg" />
+    </Window.Background>
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="457*" />
+            <ColumnDefinition Width="892*" />
+        </Grid.ColumnDefinitions>
+        <Canvas Height="470" HorizontalAlignment="Left" Margin="-11,221,0,0" Name="content" VerticalAlignment="Top" Width="1336" Grid.ColumnSpan="2" Visibility="Visible">
+            <TextBox AcceptsReturn="True" Background="#66FFFFFF" BorderBrush="RoyalBlue" FontSize="15" FontWeight="Normal" Foreground="Black" Height="35" Name="userad" TextWrapping="Wrap" Visibility="Visible" Width="1069" FontStyle="Italic" TabIndex="4" Text="" VerticalContentAlignment="Center" Canvas.Left="248" Canvas.Top="298" />
+            <Label Content="Name of the Problem" FontFamily="Cambria" FontSize="17" FontStyle="Normal" Foreground="White" Height="26" Name="a" OpacityMask="{x:Null}" Width="231" FontWeight="Normal" Visibility="Visible" Canvas.Left="11" Canvas.Top="30">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Black" Offset="0" />
+                        <GradientStop Color="#002E48A0" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <Label Content="Description &amp; Symptoms" FontFamily="Cambria" FontSize="17" FontStyle="Normal" FontWeight="Normal" Foreground="White" Height="34" Name="b" OpacityMask="{x:Null}" Width="231" Visibility="Visible" Canvas.Left="11" Canvas.Top="72">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Black" Offset="0" />
+                        <GradientStop Color="#002E48A0" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <Label Content="Enter your name" FontFamily="Cambria" FontSize="17" FontStyle="Normal" FontWeight="Normal" Foreground="White" Height="35" Name="c" OpacityMask="{x:Null}" Visibility="Visible" Width="231" Canvas.Left="11" Canvas.Top="257">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Black" Offset="0" />
+                        <GradientStop Color="#002E48A0" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <Label Content="Enter your e-mail address" FontFamily="Cambria" FontSize="17" FontStyle="Normal" FontWeight="Normal" Foreground="White" Height="35" Name="d" OpacityMask="{x:Null}" Visibility="Visible" Width="231" Canvas.Left="11" Canvas.Top="298">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Black" Offset="0" />
+                        <GradientStop Color="#002E48A0" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <Label Content="Enter your password" FontFamily="Cambria" FontSize="17" FontStyle="Normal" FontWeight="Normal" Foreground="White" Height="35" Name="p" OpacityMask="{x:Null}" Visibility="Visible" Width="231" Canvas.Left="11" Canvas.Top="339">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Black" Offset="0" />
+                        <GradientStop Color="#002E48A0" Offset="1" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <Image Height="34" Name="safe_img" Stretch="Uniform" Width="34" Source="/Vifarnet;component/Images/lock.png" Cursor="Arrow" Opacity="0.6" Visibility="Visible" Canvas.Left="206" Canvas.Top="339" />
+            <my:RibbonButton Height="28" Name="safe_btn" Width="253" BorderBrush="#FFFF9900" Visibility="Visible" Canvas.Left="109" Canvas.Top="306">
+                <my:RibbonButton.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="Gold" Offset="1" />
+                    </LinearGradientBrush>
+                </my:RibbonButton.Background>
+            </my:RibbonButton>
+            <TextBlock Height="27" Name="safe_txt" Text="Secured &amp; trusted connection" Width="237" FontStyle="Normal" FontFamily="Palatino Linotype" FontSize="18" Visibility="Visible" Canvas.Left="117" Canvas.Top="307" />
+            <Label Content="Why should I provide my password?" FontFamily="Palatino Linotype" FontSize="17" FontStyle="Italic" Height="36" Name="faq" OpacityMask="{x:Null}" Width="291" Cursor="Hand" FontWeight="Bold" Visibility="Visible" BorderBrush="Black" Foreground="Black" Canvas.Left="10" Canvas.Top="374">
+                <Label.Background>
+                    <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                        <GradientStop Color="Transparent" Offset="1" />
+                        <GradientStop Color="#7EBE6127" Offset="0.344" />
+                    </LinearGradientBrush>
+                </Label.Background>
+            </Label>
+            <Button Content="Send Report " Cursor="Hand" FlowDirection="LeftToRight" FontFamily="Cambria" FontSize="23" FontStyle="Italic" FontWeight="Bold" Foreground="Black" Height="39" HorizontalContentAlignment="Right" Name="Send" Width="179" Visibility="Visible" VerticalContentAlignment="Center" TabIndex="6" IsDefault="True" BorderBrush="#FFA3D2FF" Canvas.Left="266" Canvas.Top="414">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#72FFFFFF" Offset="0" />
+                        <GradientStop Color="#FF89DBFF" Offset="1" />
+                        <GradientStop Color="#FFA3D2FF" Offset="1" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image Cursor="Hand" Height="30" Name="Send_img" Source="/Vifarnet;component/Images/OK2.png" Stretch="Uniform" Visibility="Visible" Width="35" Canvas.Left="280" Canvas.Top="419" />
+            <Button Content="Cancel the report " FlowDirection="LeftToRight" FontFamily="Cambria" FontSize="23" FontStyle="Italic" FontWeight="Normal" Foreground="Black" Height="39" HorizontalContentAlignment="Right" Name="can" Width="222" Cursor="Hand" Visibility="Visible" VerticalContentAlignment="Center" TabIndex="7" BorderBrush="#FFA3D2FF" Canvas.Left="477" Canvas.Top="414">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#72FFFFFF" Offset="0" />
+                        <GradientStop Color="#FF89DBFF" Offset="1" />
+                        <GradientStop Color="#FFA3D2FF" Offset="1" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image Height="30" Name="can_img" Source="/Vifarnet;component/Images/close1.ico" Stretch="Uniform" Width="35" Cursor="Hand" Visibility="Visible" Canvas.Left="496" Canvas.Top="419" />
+            <Button Content="How'll I know if I've recieved a solution? " Cursor="Hand" FlowDirection="LeftToRight" FontFamily="Cambria" FontSize="24" FontStyle="Italic" FontWeight="Normal" Foreground="Black" Height="39" HorizontalContentAlignment="Right" IsDefault="False" Name="sol" Width="449" Visibility="Visible" BorderBrush="#FFA3D2FF" Canvas.Left="732" Canvas.Top="414">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#72FFFFFF" Offset="0" />
+                        <GradientStop Color="#FF89DBFF" Offset="1" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image Cursor="Hand" Height="35" Name="sol_img" Source="/Vifarnet;component/Images/help.ico" Stretch="Uniform" Width="36" Visibility="Visible" Canvas.Left="742" Canvas.Top="416" />
+            <TextBox AcceptsReturn="True" Height="173" Name="des" TextWrapping="Wrap" Width="1069" Background="#66FFFFFF" FontSize="15" Foreground="Black" Visibility="Visible" BorderBrush="RoyalBlue" TabIndex="2" Canvas.Left="248" Canvas.Top="72"></TextBox>
+            <TextBox Height="26" Name="titlebox" Width="1069" AcceptsReturn="True" TextWrapping="Wrap" Background="#66FFFFFF" FontSize="15" FontWeight="Bold" Foreground="Black" Visibility="Visible" BorderBrush="RoyalBlue" TabIndex="1" VerticalContentAlignment="Center" Canvas.Left="248" Canvas.Top="30"></TextBox>
+            <TextBox AcceptsReturn="True" Background="#66FFFFFF" BorderBrush="RoyalBlue" FontSize="15" FontWeight="Bold" Foreground="Black" Height="35" Name="user" TextWrapping="Wrap" Visibility="Visible" Width="1069" TabIndex="3" VerticalContentAlignment="Center" Canvas.Left="248" Canvas.Top="257" />
+            <PasswordBox Height="34" Name="pass" Width="1069" Background="#66FFFFFF" BorderBrush="RoyalBlue" Visibility="Visible" FontSize="15" TabIndex="5" FontFamily="Segoe UI" VerticalContentAlignment="Center" Canvas.Left="248" Canvas.Top="340" />
+        </Canvas>
+        <Button Content="Report a problem " Height="59" HorizontalAlignment="Center" Margin="66,351,533,293" Name="report" VerticalAlignment="Center" Width="293" FontWeight="Bold" FontSize="24" FontFamily="Segoe Script" FontStyle="Normal" Foreground="Black" HorizontalContentAlignment="Right" FlowDirection="LeftToRight" Cursor="Hand" IsDefault="True" BorderBrush="#FFA3D2FF" Grid.Column="1" IsEnabled="True" Visibility="Visible">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#72FFFFFF" Offset="0" />
+                    <GradientStop Color="#FF89DBFF" Offset="1" />
+                    <GradientStop Color="#FFA3D2FF" Offset="1" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <my:RibbonGroup HorizontalAlignment="Center" Name="ribbonGroup1" Width="1349" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,-12,0,631" Opacity="1" Grid.ColumnSpan="2" Visibility="Visible">
+            <my:RibbonGroup.ContextMenu>
+                <ContextMenu Opacity="0.3" Visibility="Hidden" />
+            </my:RibbonGroup.ContextMenu>
+        </my:RibbonGroup>
+        <Label Content="Fix It" FontFamily="Gabriola" FontSize="45" FontWeight="Normal" Height="62" HorizontalAlignment="Center" Margin="200,0,599,647" Name="Label1" VerticalAlignment="Bottom" Width="93" VerticalContentAlignment="Center" Grid.Column="1" HorizontalContentAlignment="Center" FontStyle="Normal" Visibility="Visible">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Blue" Offset="1" />
+                    <GradientStop Color="White" Offset="0.197" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Image Cursor="Arrow" Height="66" HorizontalAlignment="Center" Margin="141,0,685,0" Name="fixit_img" Opacity="1" OpacityMask="Black" Source="/Vifarnet;component/Images/fixit.png" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Width="66" Grid.Column="1" Visibility="Visible" />
+        <ProgressBar Background="#58FFFFFF" BorderBrush="#58FFFFFF" Height="4" HorizontalAlignment="Left" Margin="-11,68,0,0" Name="ProgressBar1" Value="100" VerticalAlignment="Top" Width="1397" Grid.ColumnSpan="2" IsIndeterminate="True" Visibility="Visible">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#58FFFFFF" Offset="0" />
+                    <GradientStop Color="#FF2C7BBE" Offset="0.697" />
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+        <TextBlock Height="24" HorizontalAlignment="Left" Margin="0,81,0,0" Name="textBlock1" Text=" Welcome to the new, Vifarnet Fix It!" VerticalAlignment="Top" Width="306" TextWrapping="Wrap" Foreground="White" FontSize="18" FontFamily="Palatino Linotype" FontStyle="Italic" FontWeight="Bold" Visibility="Visible"></TextBlock>
+        <Label Height="37" HorizontalAlignment="Left" Margin="0,96,0,0" Name="label2" VerticalAlignment="Top" Width="1370" FontSize="17" FontFamily="Cambria" OpacityMask="{x:Null}" Foreground="White" Content="If you're looking to solve any problems related to your computer, you're at the right place! This app is specially built to manage and help users, know and fix computer problems without" FontStyle="Normal" Grid.ColumnSpan="2" Visibility="Visible" />
+        <Label Content="the problem is solved. We'll take utmost care while solving your problems, creating no side-effects and while gauranteeing a complete fix!" FontFamily="Cambria" FontSize="17" Foreground="White" Height="30" HorizontalAlignment="Left" Margin="0,146,0,0" Name="label3" OpacityMask="{x:Null}" VerticalAlignment="Top" Width="1370" FontStyle="Normal" Grid.ColumnSpan="2" Visibility="Visible" />
+        <Label Content="misleading or harming your PC." FontFamily="Cambria" FontSize="17" FontStyle="Normal" Foreground="White" Height="37" HorizontalAlignment="Left" Margin="0,113,0,0" Name="label5" OpacityMask="{x:Null}" VerticalAlignment="Top" Width="1370" Grid.ColumnSpan="2" Visibility="Visible" />
+        <Label FontFamily="Cambria" FontSize="17" FontStyle="Normal" Foreground="White" Height="35" HorizontalAlignment="Left" Margin="0,130,0,0" Name="label6" OpacityMask="{x:Null}" VerticalAlignment="Top" Width="1370" Content="Enter the details/symptoms of the problem and send a report to us (Vifarnet), where we'll take over and provide a permanent solution to the problem within a while, and see to it that" Grid.ColumnSpan="2" Visibility="Visible" />
+        <TextBlock FontFamily="Palatino Linotype" FontSize="18" FontStyle="Italic" FontWeight="Bold" Height="24" Margin="-1,184,387,0" Name="textBlock2" Text=" NOTE :" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FFEE7A00" Visibility="Visible"></TextBlock>
+        <Label FontFamily="Cambria" FontSize="17" FontStyle="Normal" Height="33" HorizontalAlignment="Left" Margin="66,182,0,0" Name="label4" OpacityMask="{x:Null}" VerticalAlignment="Top" Width="1072" Content="Only Windows 7 &amp; Windows 8 are supported." Foreground="#FFEE7A00" Grid.ColumnSpan="2" Visibility="Visible"></Label>
+        <Image Height="59" HorizontalAlignment="Left" Margin="77,351,0,0" Name="report_img" Stretch="Uniform" VerticalAlignment="Top" Width="60" Source="/Vifarnet;component/Images/note2.ico" Cursor="Hand" Grid.Column="1" Visibility="Visible" />
+    </Grid>
+</Window>

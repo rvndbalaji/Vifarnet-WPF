@@ -1,0 +1,13 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="304" Width="559" Background="Gray" Name="damnit">
+    <Grid Name="damnnit">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="142*" />
+            <ColumnDefinition Width="395*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Height="36" HorizontalAlignment="Center" Margin="10,12,369,217" Name="TextBlock1" Text="      Rvnd's Lens" VerticalAlignment="Center" Width="158" Background="White" FontWeight="Bold" TextAlignment="Center" FontSize="25" FontFamily="Agency FB" Opacity="1" Padding="2" Grid.ColumnSpan="2" />
+        <Image Height="36" HorizontalAlignment="Left" Margin="15,12,0,0" Name="Image1" Stretch="Fill" VerticalAlignment="Top" Width="34" Source="/Vifarnet;component/Images/1414356317_678090-camera-32.png" />
+    </Grid>
+</Window>

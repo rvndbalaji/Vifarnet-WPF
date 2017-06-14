@@ -1,0 +1,33 @@
+﻿<Window x:Class="down"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Vifarnet Downloader" Height="278" Width="632" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Name="dloader" Icon="/Vifarnet;component/Images/Xemplar1.png">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/bg20.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="305*" />
+            <ColumnDefinition Width="305*" />
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="190" Margin="-19,54,0,0" Stroke="White" VerticalAlignment="Top" Width="658" Opacity="0.7" Grid.ColumnSpan="2" />
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="44" Margin="-19,5,0,0" Stroke="White" VerticalAlignment="Top" Width="658" Opacity="0.7" Grid.ColumnSpan="2" />
+        <TextBlock HorizontalAlignment="Left" Height="33" Margin="244,9,0,0" TextWrapping="Wrap" Text="Downloader" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.737,2.758" FontFamily="Segoe Script" FontSize="24" Foreground="#FF2961DE" FontWeight="Bold" Grid.ColumnSpan="2" />
+        <Image Height="44" HorizontalAlignment="Left" Margin="196,5,0,0" x:Name="logo1" Stretch="Uniform" VerticalAlignment="Top" Width="48" Source="/Vifarnet;component/Images/dload.png" OpacityMask="Black" RenderTransformOrigin="-1.63,-0.367" />
+        <Label x:Name="pers" HorizontalAlignment="Left" Height="39" Margin="0,200,0,0" VerticalAlignment="Top" Width="608" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="18" FontFamily="Palatino Linotype" Grid.ColumnSpan="2" VerticalContentAlignment="Center" Content="Ready when you are!" />
+        <ProgressBar x:Name="s" Height="15" Margin="10,191,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Background="#7CFFFFFF" SmallChange="0.001">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#81808080" Offset="0" />
+                    <GradientStop Color="Black" Offset="1" />
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+        </ProgressBar>
+        <Label FontFamily="Palatino Linotype" FontSize="15" FontWeight="Normal" Height="33" HorizontalAlignment="Left" HorizontalContentAlignment="Left" Margin="10,206,0,0" Name="sp" VerticalAlignment="Top" Width="289" VerticalContentAlignment="Top" />
+        <TextBox x:Name="link" HorizontalAlignment="Left" Height="31" Margin="18,65,0,0" TextWrapping="NoWrap" Text="Enter the file link..." VerticalAlignment="Top" Width="590" FontFamily="Palatino Linotype" FontSize="17" Grid.ColumnSpan="2" BorderBrush="CornflowerBlue" Background="#A0FFFFFF" />
+        <TextBox x:Name="dir" HorizontalAlignment="Left" Height="27" Margin="18,102,0,0" TextWrapping="NoWrap" Text="Set download location..." VerticalAlignment="Top" Width="478" FontFamily="Palatino Linotype" FontSize="17" Grid.ColumnSpan="2" BorderBrush="CornflowerBlue" Background="#A0FFFFFF" />
+        <Button x:Name="br" Content="Browse..." HorizontalAlignment="Left" Height="27" Margin="189,102,0,0" VerticalAlignment="Top" Width="105" Cursor="Hand" FontFamily="Palatino Linotype" FontWeight="Bold" FontSize="14" Grid.Column="1" Background="#FFA3D2FF" BorderBrush="CornflowerBlue" />
+        <Button Background="#FFA3D2FF" BorderBrush="CornflowerBlue" Content="Cancel" Cursor="Hand" FontFamily="Palatino Linotype" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" HorizontalContentAlignment="Center" IsEnabled="False" Margin="6,150,0,68" Name="cel" Width="141" Grid.Column="1" />
+        <Button Background="#FFA3D2FF" BorderBrush="CornflowerBlue" Content="Download" Cursor="Hand" HorizontalAlignment="Left" HorizontalContentAlignment="Center" IsEnabled="True" Margin="156,150,0,68" x:Name="dload" Width="141" FontFamily="Palatino Linotype" FontSize="14" FontWeight="Bold" IsDefault="True" />
+    </Grid>
+</Window>

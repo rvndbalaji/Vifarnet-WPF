@@ -1,0 +1,31 @@
+﻿<Window x:Class="xperiment"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Xperiment" Height="856" Width="1356" Icon="/Vifarnet;component/Images/xp.ico" WindowStartupLocation="CenterScreen" Name="xper">
+    <Grid>
+        <Label Content="Xperiment" FontFamily="Gabriola" FontSize="50" FontWeight="Normal" HorizontalAlignment="Left" Margin="552,-24,0,740" Name="title" Width="184">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0094FF" Offset="0.377" />
+                    <GradientStop Color="Blue" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <ProgressBar Background="#58FFFFFF" BorderBrush="#58FFFFFF" Height="0" HorizontalAlignment="Left" IsIndeterminate="True" Margin="-10,49,0,0" Name="ProgressBar1" Orientation="Horizontal" RenderTransformOrigin="0.5,0.5" Value="100" VerticalAlignment="Top" Width="1344">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="#58FFFFFF" Offset="0.008" />
+                    <GradientStop Color="#FFBE2C2C" Offset="1" />
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+    </Grid>
+</Window>

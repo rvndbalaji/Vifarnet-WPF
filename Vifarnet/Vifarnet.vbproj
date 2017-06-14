@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{18F92233-A8C6-4071-AF1E-BE70593417DC}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Vifarnet</RootNamespace>
+    <AssemblyName>Vifarnet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <MyType>Custom</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Visual Basics 2010\Software Setup Files\Vifarnet\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>https://www.facebook.com/rvnd.balaji</SupportUrl>
+    <ErrorReportUrl>https://www.facebook.com/rvnd.balaji</ErrorReportUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Vifarnet Xemplar</ProductName>
+    <PublisherName>Aravind Balaji</PublisherName>
+    <SuiteName>Xemplar</SuiteName>
+    <ApplicationRevision>35</ApplicationRevision>
+    <ApplicationVersion>3.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>true</IncrementalBuild>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Vifarnet.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <IncrementalBuild>false</IncrementalBuild>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Vifarnet.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42314</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>xplr.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5C9B0E85E329C01A3C1378D762372AFFD2DB3A7F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Vifarnet_3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.Modeling.Sdk.Integration.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Modeling.Sdk.Integration.Shell.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.Windows.Shell, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="RibbonControlsLibrary, Version=4.0.0.11019, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFToolkit.Extended, Version=1.6.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Extended.Wpf.Toolkit.1.6.0\lib\net40\WPFToolkit.Extended.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="Application.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Dip.xaml.vb">
+      <DependentUpon>Dip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="down.xaml.vb">
+      <DependentUpon>down.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="d_calc.xaml.vb">
+      <DependentUpon>d_calc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lr.xaml.vb">
+      <DependentUpon>lr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Mail.vb" />
+    <Compile Include="math.xaml.vb">
+      <DependentUpon>math.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="music.xaml.vb">
+      <DependentUpon>music.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="mytasks.Designer.vb">
+      <DependentUpon>mytasks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mytasks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nm.xaml.vb">
+      <DependentUpon>nm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pass.xaml.vb">
+      <DependentUpon>pass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="quit.xaml.vb">
+      <DependentUpon>quit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="rim.Designer.vb">
+      <DependentUpon>rim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updater.xaml.vb">
+      <DependentUpon>updater.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window1.xaml.vb">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xperiment.xaml.vb">
+      <DependentUpon>xperiment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="xpl.xaml.vb">
+      <DependentUpon>xpl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="abt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="books.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xpl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ctrl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="down.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="d_calc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fixit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="math.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="music.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="nm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="quit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Start Screen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="abt.xaml.vb">
+      <DependentUpon>abt.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Application.xaml.vb">
+      <DependentUpon>Application.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="books.xaml.vb">
+      <DependentUpon>books.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ctrl.xaml.vb">
+      <DependentUpon>ctrl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmailMessage.vb" />
+    <Compile Include="FileStrem.vb" />
+    <Compile Include="Fixit.xaml.vb">
+      <DependentUpon>Fixit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="POP3.vb" />
+    <Compile Include="Start Screen.xaml.vb">
+      <DependentUpon>Start Screen.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="updater.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="xperiment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Controls" />
+    <Import Include="System.Windows.Data" />
+    <Import Include="System.Windows.Documents" />
+    <Import Include="System.Windows.Input" />
+    <Import Include="System.Windows.Shapes" />
+    <Import Include="System.Windows.Media" />
+    <Import Include="System.Windows.Media.Imaging" />
+    <Import Include="System.Windows.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWpfExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.WPF.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mytasks.resx">
+      <DependentUpon>mytasks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rim.resx">
+      <DependentUpon>rim.vb</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Images\Vsign.psd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <AppDesigner Include="My Project\" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="xplr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Images\Xemplar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bar1b.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\load17.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dj.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\fixit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\mov1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\math3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\xplore.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Information.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\load18.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\const1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\const3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ctrl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ctrl1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Vsign.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Vsign1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Vsign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OK2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OK1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\infoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\m1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\xp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\const2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\note1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\note2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\m2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Login-toolbar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Blue_butterfly.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\calc1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\arrow6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\dload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg35.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\math2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\desc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rfsh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\load18.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\win8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Xemplar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\task.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Timetable-toolbar.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg33.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg37.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg30.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Administrator.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Monitor Sesjusz.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\au.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Def.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taskx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infoy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\little1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Intro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\LR_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\au1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\rfsh.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Alert.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg36.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bubbles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg282.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ud1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg40.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DSC_0020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DSCa_0224.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\DSC_00201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.MSXML">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Modeling.Sdk.10.0">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Modeling.Sdk.Integration.10.0">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.OLE.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell.Interop.8.0">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.TextManager.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.TextManager.Interop.8.0">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Windows.Shell">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="RibbonControlsLibrary">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="WPFToolkit.Extended">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\srch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\propic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\propic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notify.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\note11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\img0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Themes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\sukhoi-t-50-1077-hd-wallpapers - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1601490_593547107380874_301905158_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\thumbs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\smili 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\imageedit_3_4902069862.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Smiley-11-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Smiley-11-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1414356317_678090-camera-32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

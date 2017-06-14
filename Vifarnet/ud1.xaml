@@ -1,0 +1,8 @@
+﻿<Window x:Class="ud1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Vifarnet Updater" Height="334" Width="551" ResizeMode="NoResize" Topmost="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ProgressBar HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="564" Foreground="#FF065BB0" IsIndeterminate="True" Margin="-10,285,-9,0"/>
+    </Grid>
+</Window>

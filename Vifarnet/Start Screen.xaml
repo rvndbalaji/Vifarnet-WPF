@@ -1,0 +1,252 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="MainWindow"
+    Title="Vifarnet Xemplar" Height="576" Width="842" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" FontFamily="Palatino Linotype" FontWeight="Bold" xmlns:my="http://schemas.microsoft.com/winfx/2006/xaml/presentation/ribbon" Name="StrtScrn" Icon="/Vifarnet;component/xplr.ico" xmlns:my1="clr-namespace:Xceed.Wpf.Toolkit.Chromes;assembly=WPFToolkit.Extended" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" Opacity="1">
+    <Window.Background>
+        <ImageBrush ImageSource="/Vifarnet;component/Images/bg40.jpg" />
+    </Window.Background>
+    <Grid Width="836" Margin="3,0" Height="547" VerticalAlignment="Bottom" Name="main_grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Label Content="..." Height="38" HorizontalAlignment="Right" Margin="0,510,-1,-1" x:Name="user" VerticalAlignment="Top" Width="779" FontFamily="Cambria" FontSize="23" FontStyle="Italic" FontWeight="Bold" Foreground="Black" VerticalContentAlignment="Bottom" HorizontalContentAlignment="Left" Grid.ColumnSpan="2">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <my:RibbonGroup HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="2,-5,3,465" x:Name="rib" VerticalContentAlignment="Center" Width="831" Grid.ColumnSpan="2">
+            <my:RibbonGroup.ContextMenu>
+                <ContextMenu Opacity="1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Visibility="Hidden"></ContextMenu>
+            </my:RibbonGroup.ContextMenu>
+        </my:RibbonGroup>
+        <Image Height="78" HorizontalAlignment="Left" Margin="234,3,0,0" x:Name="logo1" Stretch="Uniform" VerticalAlignment="Top" Width="79" Source="/Vifarnet;component/xplr.ico" OpacityMask="Black" />
+        <Label Content="Vifarnet" Height="49" HorizontalAlignment="Left" Margin="313,11,0,0" x:Name="vifarnet" VerticalAlignment="Top" Width="151" FontFamily="Cambria" FontSize="40" FontWeight="Normal" Grid.ColumnSpan="2">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8D0000" />
+                    <GradientStop Color="Red" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <ProgressBar Height="3" HorizontalAlignment="Left" Margin="-29,81,-38,0" x:Name="ProgressBar1" VerticalAlignment="Top" Width="903" Value="100" RenderTransformOrigin="0.5,0.5" Orientation="Horizontal" IsIndeterminate="True" Grid.ColumnSpan="2">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="1,0.5" StartPoint="0,0.5">
+                    <GradientStop Color="Transparent" Offset="0.008" />
+                    <GradientStop Color="#FFBE2C2C" Offset="1" />
+                    <GradientStop Color="#FF2C6FBE" Offset="0.467" />
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+            <ProgressBar.Background>
+                <SolidColorBrush />
+            </ProgressBar.Background>
+            <ProgressBar.BorderBrush>
+                <SolidColorBrush />
+            </ProgressBar.BorderBrush>
+        </ProgressBar>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="6,104,0,0" Name="m_txt" VerticalAlignment="Top" Width="113" Visibility="Hidden">
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Music" Height="32" Name="label4" FontFamily="Segoe Script" FontSize="18" FlowDirection="LeftToRight" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="113" Foreground="Black" />
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFDA8B20" Offset="1" />
+                    <GradientStop Color="Transparent" Offset="0" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="95,104,0,0" Name="fixit_txt" VerticalAlignment="Top" Visibility="Hidden" Width="113">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FFAF1500" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Fix It" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Height="32" HorizontalContentAlignment="Center" Name="label5" VerticalContentAlignment="Center" Width="113" Foreground="Black" />
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="259,106,0,0" Name="math_txt" VerticalAlignment="Top" Visibility="Hidden" Width="152">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FFFFAA00" Offset="1" />
+                    <GradientStop Color="#00FFFBF4" Offset="0" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Mathematics" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Height="32" HorizontalContentAlignment="Center" Name="label7" VerticalContentAlignment="Center" Width="131" Foreground="Black" />
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="365,104,0,0" Name="xplr_txt" VerticalAlignment="Top" Visibility="Hidden" Width="113" Grid.ColumnSpan="2">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FFFF3100" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Xplore!" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Height="32" HorizontalContentAlignment="Center" Name="label8" VerticalContentAlignment="Center" Width="113" Foreground="Black" />
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="134,104,0,0" Name="mt_txt" VerticalAlignment="Top" Visibility="Hidden" Width="113" Grid.Column="1">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FFE5ADAD" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="My Tasks" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Height="32" HorizontalContentAlignment="Center" Name="label9" VerticalContentAlignment="Center" Width="113" Foreground="Black" />
+        </Border>
+        <Label Content="Xemplar" FontFamily="Gabriola" FontSize="50" HorizontalAlignment="Left" Margin="43,-3,0,470" Name="Label11" Width="143" FontWeight="Normal" Grid.Column="1">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0094FF" Offset="0.377" />
+                    <GradientStop Color="Blue" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="41,104,0,0" Name="book_txt" VerticalAlignment="Top" Visibility="Hidden" Width="113" Grid.Column="1">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FF3FBE38" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Books" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Height="32" HorizontalContentAlignment="Center" Name="Label3" VerticalContentAlignment="Center" Width="113" Foreground="Black" />
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="168,105,0,0" Name="sc_txt" VerticalAlignment="Top" Visibility="Hidden" Width="146">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="Gray" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Speed Comp" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Height="32" HorizontalContentAlignment="Center" Name="Label1" VerticalContentAlignment="Center" Width="128" Foreground="Black"></Label>
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="7,215,0,0" Name="dm_txt" VerticalAlignment="Top" Visibility="Hidden" Width="121">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FFFF3100" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="DeskMail" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Foreground="Black" Height="32" HorizontalContentAlignment="Center" Name="Label12" VerticalContentAlignment="Center" Width="113" />
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="82,216,0,0" Name="dload_txt" VerticalAlignment="Top" Visibility="Hidden" Width="155">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="#FF3375C7" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Downloader" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Foreground="Black" Height="32" HorizontalContentAlignment="Center" Name="Label14" VerticalContentAlignment="Center" Width="128" />
+        </Border>
+        <Border BorderThickness="1" Height="30" HorizontalAlignment="Left" Margin="173,453,0,0" Name="a2" VerticalAlignment="Top" Visibility="Hidden" Width="179" Grid.Column="1">
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="Control Panel" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Foreground="Black" Height="32" HorizontalContentAlignment="Center" Name="Label6" VerticalContentAlignment="Center" Width="148" />
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="#3C000000" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border BorderThickness="1" Height="30" Margin="248,453,40,0" Name="a3" VerticalAlignment="Top" Visibility="Hidden" Grid.Column="1">
+            <Border.BorderBrush>
+                <SolidColorBrush />
+            </Border.BorderBrush>
+            <Label Content="About" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Foreground="Black" Height="32" HorizontalContentAlignment="Center" Name="Label15" VerticalContentAlignment="Center" Width="113" />
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="#3C000000" Offset="1" />
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Image Cursor="Hand" Name="upd" Opacity="0.8" OpacityMask="{x:Null}" Source="/Vifarnet;component/Images/rfsh.ico" Stretch="Uniform" StretchDirection="Both" Margin="157,475,183,0" Grid.Column="1" />
+        <Image Cursor="Hand" Name="i1" Opacity="1" OpacityMask="Black" Source="/Vifarnet;component/Images/Monitor%20Sesjusz.ico" Stretch="Uniform" StretchDirection="Both" Margin="352,11,19,490" ToolTip="Change Wallpaper" Grid.Column="1" />
+        <Canvas x:Name="apps" HorizontalAlignment="Left" Height="394" Margin="2,87,0,0" VerticalAlignment="Top" Width="754" Grid.ColumnSpan="2">
+            <Canvas.Background>
+                <ImageBrush Stretch="UniformToFill"/>
+            </Canvas.Background>
+            <Border BorderThickness="1" Canvas.Left="725" Canvas.Top="367" Height="30" x:Name="a6" Visibility="Hidden" BorderBrush="#00000000">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#3C000000" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label Content="Help" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Foreground="Black" Height="32" HorizontalContentAlignment="Center" x:Name="Label10" VerticalContentAlignment="Center" Width="113" />
+            </Border>
+            <Border BorderThickness="1" Height="34" x:Name="a4" Visibility="Hidden" Width="195" Canvas.Left="512" Canvas.Top="360" BorderBrush="#00000000">
+                <Border.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#3C000000" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Label Content="Vifarnet Updater" FlowDirection="LeftToRight" FontFamily="Segoe Script" FontSize="18" Foreground="Black" Height="41" HorizontalContentAlignment="Center" x:Name="Label16" VerticalContentAlignment="Center" Width="175" />
+            </Border>
+            <Canvas x:Name="BottomBar" Height="69" Canvas.Left="519" Canvas.Top="388" Width="311">
+                <Image Cursor="Hand" Height="52" HorizontalAlignment="Left" x:Name="ctrlc" OpacityMask="{x:Null}" Source="/Vifarnet;component/Images/ctrl2.png" Stretch="Uniform" StretchDirection="Both" VerticalAlignment="Top" Width="50" Opacity="0.7" Canvas.Left="138" Canvas.Top="11" />
+                <Image Cursor="Hand" Height="52" HorizontalAlignment="Left" x:Name="abt_img" Source="/Vifarnet;component/Images/Information.ico" Stretch="Uniform" StretchDirection="Both" VerticalAlignment="Top" Width="50" OpacityMask="{x:Null}" Opacity="0.7" Canvas.Left="193" Canvas.Top="14" />
+                <Image Cursor="Hand" Height="51" HorizontalAlignment="Left" x:Name="hlpsup_img" OpacityMask="{x:Null}" Source="/Vifarnet;component/Images/help.ico" Stretch="Uniform" StretchDirection="Both" VerticalAlignment="Top" Width="50" Opacity="0.6" Canvas.Left="248" Canvas.Top="13" />
+            </Canvas>
+            <Image Height="60" x:Name="m_img" OpacityMask="Black" Source="/Vifarnet;component/Images/dj.ico" Stretch="Fill" VerticalAlignment="Top" StretchDirection="Both" Cursor="Hand" Opacity="0.7" Width="60" Focusable="False" Canvas.Left="30" Canvas.Top="55" />
+            <Image Cursor="Hand" Height="60" HorizontalAlignment="Left" x:Name="fixit_img" OpacityMask="Black" Source="/Vifarnet;component/Images/fixit.png" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Width="60" Opacity="0.7" Canvas.Left="121" Canvas.Top="54" />
+            <Image Cursor="Hand" Height="60" x:Name="sc_img" Opacity="0.7" OpacityMask="Black" Source="/Vifarnet;component/Images/ctrl1.png" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Width="60" Canvas.Left="210" Canvas.Top="57" />
+            <Image Cursor="Hand" Height="60" HorizontalAlignment="Left" x:Name="math_img" OpacityMask="Black" Source="/Vifarnet;component/Images/math3.ico" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Width="60" Opacity="0.7" Canvas.Left="307" Canvas.Top="54" />
+            <Image Cursor="Hand" Height="50" HorizontalAlignment="Left" x:Name="xplore_img" OpacityMask="Black" Source="/Vifarnet;component/Images/xplore.ico" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Width="50" Opacity="0.7" Canvas.Left="398" Canvas.Top="57" />
+            <Image Cursor="Hand" Height="50" x:Name="book_img" Opacity="0.7" OpacityMask="Black" Source="/Vifarnet;component/Images/books.png" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Width="50" Canvas.Left="490" Canvas.Top="56" />
+            <Image Cursor="Hand" Height="60" x:Name="mt_img" OpacityMask="Black" Source="/Vifarnet;component/Images/task.png" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Opacity="0.7" Width="60" Canvas.Left="574" Canvas.Top="58" />
+            <Image Cursor="Hand" Height="50" HorizontalAlignment="Left" x:Name="dm_img" Opacity="0.7" OpacityMask="Black" Source="/Vifarnet;component/Images/m1.ico" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" Width="50" Canvas.Left="38" Canvas.Top="167" />
+            <Image Cursor="Hand" Height="60" x:Name="dload_img" Opacity="0.7" OpacityMask="Black" Source="/Vifarnet;component/Images/dload.png" Stretch="Fill" StretchDirection="Both" VerticalAlignment="Top" HorizontalAlignment="Left" Width="60" Canvas.Left="122" Canvas.Top="162" />
+        </Canvas>
+        <Label FontFamily="Cambria" FontSize="23" FontStyle="Italic" FontWeight="Bold" Foreground="Black" HorizontalContentAlignment="Left" Name="Label2" VerticalContentAlignment="Bottom" Margin="-21,509,358,0">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Transparent" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <Image Cursor="Hand" x:Name="i2" Opacity="1" OpacityMask="Black" Source="/Vifarnet;component/Images/propic.png" Stretch="Uniform" StretchDirection="Both" Margin="-1,475,359,-1" ToolTip="Change Username" HorizontalAlignment="Stretch" VerticalAlignment="Center" Height="73" />
+        <Grid.Background>
+            <ImageBrush />
+        </Grid.Background>
+    </Grid>
+</Window>
